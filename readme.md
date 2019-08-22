@@ -1,3 +1,3 @@
-# notj's dotfiles
+# notj's files
 
 Move along, not much here
