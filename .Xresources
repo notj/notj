@@ -1,0 +1,125 @@
+! .Xresources
+! font {{{
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: 1
+Xft.hinting: 0
+Xft.antialias: 1
+Xft.rgba: rgb
+
+! end of font }}}
+! rofi {{{
+
+rofi.color-enabled: true
+rofi.padding:400
+rofi.color-window:argb:b5000000,argb:b5000000,0
+rofi.color-normal:argb:00000000,white,argb:00000000,argb:b5ef473a,white
+rofi.color-active:argb:00000000,white,argb:00000000,argb:b5cb2d3e,white
+rofi.color-urgent:argb:00000000,white,argb:00000000,argb:b5870734,white
+rofi.separator-style:none
+rofi.hide-scrollbar:true
+rofi.scroll-method:1
+rofi.font:Overpass Light 14
+rofi.modi:window,run,ssh,combi
+rofi.line-margin:0
+rofi.line-padding:8
+rofi.window-format: {c} {t}
+
+! end of rofi }}}
+! urxvt {{{
+
+! urxvt.depth: 32
+! urxvt.fading: 3
+! urxvt.fadeColor: #FFFFFF
+urxvt.scrollBar: false
+urxvt.internalBorder: 16
+urxvt.lineSpace: 1
+urxvt.iso14755: false
+urxvt.font: xft:Inconsolata:pixelsize=15
+urxvt.boldFont:
+urxvt.cursorBlink: true
+
+! keybinds
+urxvt.keysym.Home: \033[1~
+urxvt.keysym.End: \033[4~
+
+! end of urxvt }}}
+! colors {{{
+
+! gruvbox {{{
+! *foreground: #ecefef
+! *cursorColor: #ecefef
+! ! soft
+! ! *background: #32303f
+! ! medium
+! ! *background: #282828
+! ! hard
+! *background: #1d2021
+! *color0:  #263238
+! *color8:  #cc6666
+! *color1:  #263238
+! *color9:  #cc6666
+! *color2:  #37474f
+! *color10: #f0c674
+! *color3:  #707880
+! *color11: #b5bd68
+! *color4:  #b5bd68
+! *color12: #8abeb7
+! *color5:  #ecefef
+! *color13: #81a2be
+! *color6:  #ecefef
+! *color14: #b294bb
+! *color7:  #ffffff
+! *color15: #cc6666
+! }}}
+! gruvbox {{{
+*foreground: #ebdbb2
+! *cursorColor: #ebdbb2
+! soft
+! *background: #32303f
+! medium
+! *background: #282828
+! hard
+*background: #1d2021
+*color0:  #282828
+*color8:  #928374
+*color1:  #cc241d
+*color9:  #fb4934
+*color2:  #98971a
+*color10: #b8bb26
+*color3:  #d79921
+*color11: #fabd2f
+*color4:  #458588
+*color12: #83a598
+*color5:  #b16286
+*color13: #d3869b
+*color6:  #689d6a
+*color14: #8ec07c
+*color7:  #a89984
+*color15: #ebdbb2
+! }}}
+! project ex v 2 {{{
+! *.foreground:   #cacfcf
+! *.background:   #282c34
+! *.cursorColor:  #cacfcf
+! *.cursorColor2: #3f444a
+! *.color0:       #282c34
+! *.color8:       #afbaba
+! *.color1:       #e06c75
+! *.color9:       #f97782
+! *.color2:       #a3be8c
+! *.color10:      #bad8a0
+! *.color3:       #d4b9a7
+! *.color11:      #fad9c3
+! *.color4:       #56b6c2
+! *.color12:      #60ccdb
+! *.color5:       #d08770
+! *.color13:      #ea977e
+! *.color6:       #96b5b4
+! *.color14:      #a3cfcc
+! *.color7:       #cacfcf
+! *.color15:      #f9fffd
+! }}}
+
+! end of colors }}}
+
