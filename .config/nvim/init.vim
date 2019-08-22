@@ -5,7 +5,7 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " browsing
-Plug 'yuratomo/w3m.vim'
+" Plug 'yuratomo/w3m.vim'
 
 " Plug 'hhsnopek/vim-firewatch'
 " development
