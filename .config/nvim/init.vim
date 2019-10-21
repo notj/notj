@@ -5,11 +5,12 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " browsing
-" Plug 'yuratomo/w3m.vim'
+Plug 'yuratomo/w3m.vim'
 
 " Plug 'hhsnopek/vim-firewatch'
 " development
-Plug 'morhetz/gruvbox'
+" Plug 'morhetz/gruvbox'
+Plug 'sainnhe/edge'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -17,9 +18,8 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/goyo.vim'
 Plug 'chrisbra/Colorizer'
-
 " parentheses
-Plug 'tpope/vim-surround', { 'for': ['clojure', 'javascript', 'javascript.jsx'] }
+Plug 'tpope/vim-surround'
 
 " sql
 " Plug 'has2k1/sql.vim', { 'for': 'sql' }
@@ -56,10 +56,10 @@ Plug 'digitaltoad/vim-pug'
 call plug#end()
 " }}}
 " gruvbox {{{
-let g:gruvbox_italic = 1
-let g:gruvbox_contrast_dark = 'hard'
-let g:gruvbox_invert_selection = 0
-let g:gruvbox_improved_string = 1
+" let g:gruvbox_italic = 1
+" let g:gruvbox_contrast_dark = 'hard'
+" let g:gruvbox_invert_selection = 0
+" let g:gruvbox_improved_string = 1
 " }}}
 " vim-deoplete {{{
 let g:deoplete#enable_at_startup = 1
@@ -107,13 +107,6 @@ let g:alchemist_compile_basepath = '/app/'
 " }}}
 " pgsql {{{
 let g:sql_type_default = 'pgsql'
-" }}}
-" FZF {{{
-let $FZF_DEFAULT_COMMAND = 'fd --type f'
-" let $FZF_DEFAULT_OPTS .= '--inline-info'
-" bugfix maybe fixed
-" let g:fzf_layout = { 'window': 'enew' }
-let g:fzf_buffers_jump = 1
 " }}}
 " ale {{{
 let g:ale_linters = {
@@ -188,12 +181,43 @@ set foldtext=CustomFoldtext()
 " colorscheme {{{
 " overrides
 function! s:patch_colorscheme()
-  hi! EndOfBuffer ctermbg=bg ctermfg=bg guibg=bg guifg=bg
+  " bg #262729
+  hi! link elixirAlias Yellow
+  hi! link elixirDefine Yellow
+  hi! link elixirModuleDefine Yellow
+  hi! link elixirModuleDeclaration Yellow
+  hi! link elixirVariable Purple
+  hi! link elixirInclude Blue
+  hi CursorLine guibg=#262729 guifg=NONE
+  hi CursorLineNr guibg=#262729 guifg=NONE
 endfunction
 
-autocmd! Colorscheme gruvbox call s:patch_colorscheme()
+autocmd! Colorscheme edge call s:patch_colorscheme()
 
-colorscheme gruvbox
+set background=dark
+colorscheme edge
+" }}}
+" FZF {{{
+let $FZF_DEFAULT_COMMAND = 'fd --type f'
+" let $FZF_DEFAULT_OPTS .= '--color fg:#b7bec9,bg:#262729,hl:#5ebaa5,fg+:#b7bec9,bg+:#262729,hl+:#5ebaa5 --color info:#a1bf78,prompt:#a1bf78,pointer:#5ebaa5,marker:#5ebaa5,header:#a1bf78'
+" let $FZF_DEFAULT_OPTS .= '--inline-info'
+" bugfix maybe fixed
+" let g:fzf_layout = { 'window': 'enew' }
+let g:fzf_buffers_jump = 1
+let g:fzf_colors =
+\ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'Normal'],
+  \ 'hl':      ['fg', 'Cyan'],
+  \ 'fg+':     ['fg', 'Normal'],
+  \ 'bg+':     ['bg', 'Normal'],
+  \ 'hl+':     ['fg', 'Cyan'],
+  \ 'info':    ['fg', 'Green'],
+  \ 'border':  ['fg', 'Ignore'],
+  \ 'prompt':  ['fg', 'Green'],
+  \ 'pointer': ['fg', 'Cyan'],
+  \ 'marker':  ['fg', 'Cyan'],
+  \ 'spinner': ['fg', 'Cyan'],
+  \ 'header':  ['fg', 'Green'] }
 " }}}
 " key bindings {{{
 " normal mode {{{

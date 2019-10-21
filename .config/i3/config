@@ -124,7 +124,7 @@ new_window normal 0 px
 
 
 # colors
-client.focused          #91a8d0 #91a8d0 #ffffff #91a8d0 #91a8d0
+client.focused          #ff6f61 #ff6f61 #ffffff #ff6f61 #ff6f61
 client.focused_inactive #1d2021 #1d2021 #ffffff #1d2021 #1d2021
 client.unfocused        #1d2021 #1d2021 #888888 #1d2021 #1d2021
 client.urgent           #fb4934 #fb4934 #ffffff #fb4934 #fb4934

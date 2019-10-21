@@ -73,30 +73,30 @@ urxvt.keysym.End: \033[4~
 ! *color15: #cc6666
 ! }}}
 ! gruvbox {{{
-*foreground: #ebdbb2
+! *foreground: #ebdbb2
 ! *cursorColor: #ebdbb2
 ! soft
 ! *background: #32303f
 ! medium
 ! *background: #282828
 ! hard
-*background: #1d2021
-*color0:  #282828
-*color8:  #928374
-*color1:  #cc241d
-*color9:  #fb4934
-*color2:  #98971a
-*color10: #b8bb26
-*color3:  #d79921
-*color11: #fabd2f
-*color4:  #458588
-*color12: #83a598
-*color5:  #b16286
-*color13: #d3869b
-*color6:  #689d6a
-*color14: #8ec07c
-*color7:  #a89984
-*color15: #ebdbb2
+! *background: #1d2021
+! *color0:  #282828
+! *color8:  #928374
+! *color1:  #cc241d
+! *color9:  #fb4934
+! *color2:  #98971a
+! *color10: #b8bb26
+! *color3:  #d79921
+! *color11: #fabd2f
+! *color4:  #458588
+! *color12: #83a598
+! *color5:  #b16286
+! *color13: #d3869b
+! *color6:  #689d6a
+! *color14: #8ec07c
+! *color7:  #a89984
+! *color15: #ebdbb2
 ! }}}
 ! project ex v 2 {{{
 ! *.foreground:   #cacfcf
@@ -119,6 +119,41 @@ urxvt.keysym.End: \033[4~
 ! *.color14:      #a3cfcc
 ! *.color7:       #cacfcf
 ! *.color15:      #f9fffd
+! }}}
+! edge {{{
+
+#define white #b7bec9
+#define black #262729
+#define grey #88909f
+#define red #e77171
+#define green #a1bf78
+#define cyan #5ebaa5
+#define yellow #dbb774
+#define blue #73b3e7
+#define magenta #d390e7
+
+*.foreground:   white
+*.background:   black
+*.cursorColor:  white
+*fading: 10
+*fadeColor: black
+
+*.color0: grey
+*.color1: red
+*.color2: green
+*.color3: yellow
+*.color4: blue
+*.color5: magenta
+*.color6: cyan
+*.color7: white
+*.color8: grey
+*.color9: red
+*.color10: green
+*.color11: yellow
+*.color12: blue
+*.color13: magenta
+*.color14: cyan
+*.color15: white
 ! }}}
 
 ! end of colors }}}

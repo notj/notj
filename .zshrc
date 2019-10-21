@@ -65,10 +65,12 @@ export EDITOR=nvim
 export GOPATH=$HOME/.go
 # export NVM_LAZY_LOAD=true
 export PATH=$HOME/bin:$HOME/.yarn/bin:$PATH
+# pip
+export PATH=$HOME/.local/bin:$PATH
 export BOOT_HOME=$HOME/.boot
 export FZF_DEFAULT_OPTS='
---color fg:#ebdbb2,bg:#1d2021,hl:#8ec07c,fg+:#ebdbb2,bg+:#1d2021,hl+:#8ec07c
---color info:#b8bb26,prompt:#b8bb26,pointer:#8ec07c,marker:#8ec07c,header:#b8bb26 '
+--color fg:#b7bec9,bg:#262729,hl:#5ebaa5,fg+:#b7bec9,bg+:#262729,hl+:#5ebaa5
+--color info:#a1bf78,prompt:#a1bf78,pointer:#5ebaa5,marker:#5ebaa5,header:#a1bf78'
 # source /usr/share/nvm/init-nvm.sh
 # java font fix
 export JAVA_HOME=/usr/lib/jvm/default
